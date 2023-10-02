@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # warning about "echo $(cmd)", used many times with echo "$(gettext ...)"
 # shellcheck disable=SC2005
@@ -105,7 +105,7 @@ do
       # this is only used when running GameShell directly from start.sh
       if git rev-parse --is-inside-work-tree >/dev/null 2>&1
       then
-        echo "GameShell $(git describe --always --tags --dirty)"
+        echo "GameShell $(git describe --always --dirty)"
       fi
 
       echo "run directly from start.sh"
@@ -233,7 +233,8 @@ progress_finish() {
 
 init_gsh() {
 
-  ADMIN_HASH='b88968dc60b003b9c188cc503a457101b4087109'    # default for 'gsh'
+  ADMIN_SALT='EsULESDXKFpLRjZcIRiVnazJfQcwQDEz'            # a random (but fixed) salt
+  ADMIN_HASH='cb1b87bc6282a94ff3f37eb47a2aa3dc069341d0'    # default for "$GSH_SALT gsh"
 
   # message when data from a previous play is found. We can either
   #    - restart a new game
@@ -276,7 +277,11 @@ Do you want to remove it and start a new game? [y/N]') "
   # TODO save other config (color ?)
 
   # save hash for admin password
-  [ -n "$ADMIN_HASH" ] && echo "$ADMIN_HASH" > "$GSH_CONFIG/admin_hash"
+  if [ -n "$ADMIN_HASH" ]
+  then
+    echo "$ADMIN_HASH" > "$GSH_CONFIG/admin_hash"
+    echo "$ADMIN_SALT" > "$GSH_CONFIG/admin_salt"
+  fi
 
   mkdir -p "$GSH_BIN"
   mkdir -p "$GSH_SBIN"
@@ -539,7 +544,7 @@ then
   # NOTE, the above works in bash, but when running the following script with
   # GSH_SHELL=zsh, it fails with "zsh: suspended (tty output)"
   # ======== script =======
-  # #!/bin/sh
+  # #!/usr/bin/env sh
   # ./gameshell.sh -qc "gsh exit"; ./gameshell.sh -qc "gsh exit"
   # =======================
   # FIX: don't start the shell in interactive mode, and source the rcfile
