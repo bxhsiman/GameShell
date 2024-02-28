@@ -1,11 +1,11 @@
-GameShell: 用于教学Unix Shell的“小游戏”！
+GameShell: 教你用Unix Shell的“小游戏”！
 ===========================================
 
 ![Illustration inspired by the game](Images/illustration-small.png)
 
-教会高中生/大一新生使用Unix Shell可不是一件有手就行的事，GameShell就此被开发出来用于帮助
-[Université Savoie Mont Blanc](https://univ-smb.fr)的学生们走进 *真正的*
-Shell，让教学充满乐趣的同时激发学生的自主学习意识。 
+对老师来说，让零基础的大一新生学会使用Unix Shell着实让人痛苦。GameShell因此被开发出来用于帮助
+[Université Savoie Mont Blanc](https://univ-smb.fr)的学生们在 *真正的*
+Shell中实践，让教学充满乐趣的同时激发学生的自主学习意识。 
 
 Rodolphe Lepigre 最初的想法是用一个配置文件来运行一个标准的bash会话，它定义了 "missions"（任务），"missions"在经过"checked"（检查）后将推进游戏的进程。
 
@@ -14,30 +14,27 @@ Rodolphe Lepigre 最初的想法是用一个配置文件来运行一个标准的
 ![GameShell's first mission](Images/gameshell_first_mission_small.gif)
 
 
-GameShell现在支持英语、法语、意大利语...
+GameShell现在支持英语、法语、意大利语、中文...
 
 
-别害羞！欢迎通过以下渠道来评论，提问，提建议！
+欢迎通过以下渠道来评论，提问，提建议！
 [issues](https://github.com/phyver/GameShell/issues) or submitting
 [pull requests](https://github.com/phyver/GameShell/pulls). 
 
-我们很期待你创造出“船新”任务来让我们玩耍哟~
+我们也很期待你创造出全新任务来让我们玩耍哟~
 
 
 开始
 ---------------
 
-**Note:** GameShell正在进行大量开发，现行版本没有经过学生的现场测试。遇到问题请不要犹豫:
-[opening an issue](https://github.com/phyver/GameShell/issues/new) 向我们反馈。
-
-GameShell 可以在任何标准Linux系统上运行，macOS and BSD应该也没问题，但是我们没有经过太多的测试. 
-在Debian与Ubuntu上，依赖为`gettext-base` 、`awk` 还有`bash`(`awk`通常会被默认安装). 
+GameShell 可以在任何标准Linux系统上运行，macOS 和 BSD应该也没问题，但是我们没有经过太多的测试. 
+在Debian与Ubuntu上，项目除了依赖已有的`bash`，还需要`gettext-base` 、`awk` (`awk`通常会被默认安装). 
 一些"任务"可能需要额外的依赖，如果不满足依赖项，这些"任务"会被跳过.
 在Debian与Ubuntu上，运行以下指令来安装所有游戏与任务的依赖项。
 ```sh
 $ sudo apt install gettext man-db procps psmisc nano tree bsdmainutils x11-apps wget
 ```
- [user manual](doc/user_manual.md) 有其他系统的依赖安装方法， (如macOS, BSD, ...)。
+ [用户手册](doc/user_manual.md) 中有其他系统的依赖安装方法， (如macOS, BSD, ...)。
 
 如果全部依赖已经安装完毕，你可以运行以下两个命令来运行最新版本的游戏。
 ```sh
@@ -54,7 +51,7 @@ bash gameshell.sh -L zh
 游戏的新手教程附加在游戏当中~
 
 **Note:** 当你通过 ( `control-d` 或者 `gsh exit`) 退出游戏的时候
-你的游戏存档将被保存在一个新的文件当中 ( `gameshell-save.sh`)。
+你的游戏存档将被保存在名为`gameshell-save.sh`的新文件当中 。
 **运行这个文件来继续游戏！**
 
 
@@ -65,7 +62,7 @@ $ wget --quiet https://github.com/phyver/GameShell/releases/download/latest/Dock
 $ docker build -t gsh .
 $ docker run -it gsh
 ```
-游戏在退出的时候**不会保存** 。如果您想从GameShell内部运行X程序，则需要带上附加flags。详见 user manual的[这个章节](./doc/deps.md#running-GameShell-from-a-docker-container) 
+游戏在退出的时候**不会保存** 。如果您想从GameShell内部运行X程序，则需要带上附加flags。详见 用户手册的[这个章节](./doc/deps.md#running-GameShell-from-a-docker-container) 
 
 
 文档
@@ -74,6 +71,7 @@ $ docker run -it gsh
 要了解有关GameShell的更多信息，请参阅以下文档：
 -  [The user manual](doc/user_manual.md) 如何在所有支持平台运行游戏（如：Linux、macOS、BSD）、如何从源代码运行游戏、如何生成自定义游戏存档（如果您想使用GameShell来授课的话可能会用到）等等。
 -  [The developer manual](doc/dev_manual.md) 提供了有关如何创建新任务、如何翻译任务以及如何参与游戏开发的信息。
+
 
 是谁在开发GameShell？
 ----------------------------
@@ -112,11 +110,31 @@ The game is currently being developed by:
 * WhiteShield (@wshield05)
 * @gioisco
 
+#### 中文版本
+
+* @bxhsiman
+
 ### 特别鸣谢
 
 * 所有在早期版本当中捉到了 *很多* 虫子的同学们！
 * Joan Stark (a.k.a, jgs), 90年代末设计了很多ASCII艺术品，你在GameShell当中遇到的大部分ASCII艺术品都来自于她~
 
+许可协议
+-------
+
+GameShell 以[GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)发布
+
+**请在使用GameShell的时候附上本仓库链接**
+
+GameShell 是开源的，是可以免费使用的，如果你很想支持我的工作，可以考虑给我寄一张明信片~
+
+```
+  Pierre Hyvernat
+  Laboratoire de Mathématiques, CNRS UMR 5127
+  Université de Savoie
+  73376 Le Bourget du Lac
+  FRANCE
+```
 
 Licence
 -------
