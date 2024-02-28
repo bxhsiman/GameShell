@@ -6,9 +6,7 @@ gsh check
 
 gsh exit   /   Control-d
   退出 GameShell
-  (你可以通过加上"-C"标记启动Gameshell来回到当前任务)
-  (you can start from the current mission by running 
-  GameShell with the "-C" flag)
+  (加上"-C"标记启动Gameshell可继续当前任务)
 
 gsh goal
   显示当前任务的目标
