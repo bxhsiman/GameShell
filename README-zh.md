@@ -17,12 +17,24 @@ Rodolphe Lepigre 最初的想法是用一个配置文件来运行一个标准的
 GameShell现在支持英语、法语、意大利语、中文...
 
 
-欢迎通过以下渠道来评论，提问，提建议！
-[issues](https://github.com/phyver/GameShell/issues) or submitting
+欢迎通过以下渠道来评论，提问，提建议！提出[issues](https://github.com/phyver/GameShell/issues) 或者提交
 [pull requests](https://github.com/phyver/GameShell/pulls). 
 
 我们也很期待你创造出全新任务来让我们玩耍哟~
 
+翻译与校对
+---------------
+本游戏的中文版本仍然在校对中，如果您有兴趣参与项目的翻译/校对，请clone本仓库，使用以下命令执行游戏将进入中文版本
+``` bash
+bash start.sh -L zh
+```
+将zh修改为其他语言将进入游戏的其他版本，建议以英文版本作为翻译对照
+``` bash 
+bash start.sh -L en 
+```
+如有问题或更好的翻译，请提交[issue](https://github.com/bxhsiman/GameShell/issues)或直接发起[pr](https://github.com/bxhsiman/GameShell/pulls)
+
+**感谢您的参与**
 
 开始
 ---------------
