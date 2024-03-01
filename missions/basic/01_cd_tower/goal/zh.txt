@@ -1,29 +1,24 @@
 任务目标
 ============
 
-前往  castle 的 main tower 的顶层(top).
-
+前往 castle(城堡) 的 main tower(主塔) 的top(顶层).
+译者注：由于大多数系统/软件对中文文本支持较差，且本游戏更希望贴近日常的shell使用环境，
+本译本并没有修改游戏中文件目录的英文单词，*请您在游戏中对于文件目录的操作使用英文单词*
 
 秘籍
 ===============
 
 cd LOCATION
   切换到指定目录
-  提示: ``cd`` 是 "change directory" 的缩写
-  Move to the given location.
-  Remark: ``cd`` is an abbreviation for "change directory".
+  提示: ``cd`` 是 "change directory"(切换目录) 的缩写
 
 pwd
   显示你当前的位置
-  提示: ``pwd`` 是 "print working directory"的缩写
-  Show the path to your current location.
-  Remark: ``pwd`` is an abbreviation for "print working directory".
+  提示: ``pwd`` 是 "print working directory"(打印工作目录)的缩写
 
 ls
   显示当前可访问的位置列表(显示当前目录内容)
-  提示: ``ls`` 是 "list"的缩写
-  Show a list of locations that are currently accessible.
-  Remark: ``ls`` is an abbreviation of "list".
+  提示: ``ls`` 是 "list"(列出)的缩写
 
 gsh check
   检查任务是否完成(完成后请使用,以开始下一个任务)
@@ -35,9 +30,8 @@ gsh reset
 提示
 -------
 在一个指令当中大写的单词是元变量,需要替换为合适的值。
-UPPERCASE words appearing in commands are meta-variables: you need 
-to replace them by appropriate (string) values.
+示例：cd DIRECTORY -> cd /home
+DIRECTORY 是元变量，在使用中如要切换到 /home 目录，需要替换为 /home
 
-大多数操作系统是区分大小写字符的。请保证输入了正确的路径。
-Most filesystems treat uppercase and lowercase characters 
-differently. Make sure you use the correct path.
+大多数文件系统是区分大小写字符的。请保证输入了正确的路径。
+译者注：NTFS默认不区分大小写，而大多数Linux文件系统默认区分大小写。
