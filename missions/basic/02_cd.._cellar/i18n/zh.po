@@ -19,7 +19,7 @@ msgid   "$MISSION_DIR/treasure-msg/en.txt"
 msgstr  "$MISSION_DIR/treasure-msg/zh.txt"
 
 msgid   "You are not in the cellar..."
-msgstr  "你没在 cellar 啊"
+msgstr  "你没在 cellar(地窖) 啊"
 
 msgid   "barrel_of_apples"
 msgstr  "桶_装_苹_果"

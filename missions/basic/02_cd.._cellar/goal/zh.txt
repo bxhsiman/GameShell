@@ -1,7 +1,7 @@
 任务目标
 ============
 
-去城堡的地窖 Castle的Cellar
+去的Castle(城堡)的Cellar(地窖)
 
 
 次要目标
@@ -14,15 +14,11 @@
 ===============
 
 cd -
-  跳转到你之前移动到的位置
-  Jump back to the location you were in prior to your last move.
+  跳转到你上次移动前的位置
 
 cd ..
   移动到当前目录的上级目录(沿当前路径后退一步)
-  Move to the parent directory (one step back along the path to your 
-  current location).
 
 pwd
   查看当前位置
-  See the path to your current locatio
 
