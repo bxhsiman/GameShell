@@ -24,7 +24,15 @@ GameShell现在支持英语、法语、意大利语、中文...
 
 翻译与校对
 ---------------
-本游戏的中文版本仍然在校对中，如果您有兴趣参与项目的翻译/校对，请clone本仓库，使用以下命令执行游戏将进入中文版本
+本游戏的中文版本仍然在校对中，如果您有兴趣参与项目的翻译/校对，请clone本仓库
+``` bash
+git clone https://github.com/bxhsiman/GameShell.git
+```
+进入仓库目录
+``` bash
+cd GameShell
+```
+使用以下命令执行游戏将进入中文版本
 ``` bash
 bash start.sh -L zh
 ```
