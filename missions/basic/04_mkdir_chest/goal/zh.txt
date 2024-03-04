@@ -1,7 +1,7 @@
 任务目标
 ============
 
-在森林Forest当中建一个小木屋"Hut" , 之后在小木屋当中放一个箱子"Chest" 
+在Forest(森林)当中建一个Hut(小木屋) , 之后在小木屋当中放一个Chest(箱子) 
 
 
 
@@ -15,4 +15,4 @@ mkdir DIRECTORY
 
 提示
 ===============
-请把目录/文件命名为"FILENAME", 例如 /Hut/Chest 注意大小写
+请把目录或文件命名为"FILENAME", 例如 /Hut/Chest 注意大小写

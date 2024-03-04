@@ -1,8 +1,8 @@
 任务目标
 ============
 
-收集城堡Castle前的公园Garden中的所有的硬币coins。
-把它们放到你在森林forest当中的小木屋hut的箱子chest中。
+收集Castle(城堡)前的Garden(公园)中的所有的coins(硬币)。
+把它们放到你在forest(森林)当中的hut(小木屋)的chest(箱子)中。
 
 
 秘籍
