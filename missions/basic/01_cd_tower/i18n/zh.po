@@ -19,7 +19,7 @@ msgid   "$MISSION_DIR/treasure-msg/en.txt"
 msgstr  "$MISSION_DIR/treasure-msg/zh.txt"
 
 msgid   "You are not at the top of the tower!"
-msgstr  "你还没有到达tower的顶端！"
+msgstr  "你还没有到达tower(塔)的顶端！"
 
 msgid   "You need to start over from the start."
 msgstr  "你需要从头开始了..."
