@@ -5,18 +5,16 @@
 清除那些地窖里藏起来的蜘蛛，别动蝙蝠！
 (蜘蛛=spiders 地窖=cellar 蝙蝠=bat)
 
-Shell patterns
+Shell patterns (Shell"模式")
 ==============
 
 *
   "*" 代表任何字符序列，也包括空字符序列。
   (例如./* 代表./下的"任何"文件或目录)
-  The "*" character stands in for any sequence of characters 
-  (including an empty sequence).
+
 
 ?
   "?" 单独一个"任何"字符.
-  The "?" character stands in for any single character.
 
 
 提示
